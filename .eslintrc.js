@@ -10,5 +10,8 @@ module.exports = {
   },
   rules: {
     quotes: ['error', 'single', { avoidEscape: true }],
+    'func-names': ['error', 'as-needed'],
+    'no-underscore-dangle': ['error', { allow: ['_id'] }],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
   },
 };
