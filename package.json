@@ -45,10 +45,7 @@
     "express": "^4.17.1",
     "joi": "^17.3.0",
     "jsonwebtoken": "^8.5.1",
-    "module-alias": "^2.2.2",
-    "mongoose": "^5.11.8"
-  },
-  "_moduleAliases": {
-    "@util": "util"
+    "mongoose": "^5.11.8",
+    "rootpath": "^0.1.2"
   }
 }
