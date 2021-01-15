@@ -41,6 +41,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "config": "^3.3.3",
@@ -53,6 +54,7 @@
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^1.12.2",
     "mongoose": "^5.11.8",
+    "request": "^2.88.2",
     "rootpath": "^0.1.2"
   }
 }
