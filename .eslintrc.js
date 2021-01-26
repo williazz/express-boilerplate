@@ -12,6 +12,7 @@ module.exports = {
     quotes: ['error', 'single', { avoidEscape: true }],
     'func-names': ['error', 'as-needed'],
     'no-underscore-dangle': ['error', { allow: ['_id'] }],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'import/no-unresolved': [0],
+    'no-console': [0],
   },
 };
