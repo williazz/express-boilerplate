@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
-/* eslint-disable import/no-unresolved */
-const config = require('config.json');
+const config = require('config.js');
 const User = require('services/users/user.model');
-/* eslint-enable import/no-unresolved */
 
 const connectionString = process.env.MONGO_URI || config.MONGO_URI;
 const connectionOptions = {
