@@ -1,7 +1,7 @@
+const appRoot = require('app-root-path');
 const jwt = require('express-jwt');
 const jwks = require('jwks-rsa');
-
-const { AUTH0 } = reqlib('config');
+const { AUTH0 } = require(appRoot + '/config');
 
 /**
  * Checks a jwt using a config
