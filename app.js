@@ -1,9 +1,8 @@
-global.reqlib = require('app-root-path').require;
+const appRoot = require('app-root-path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-
-const auth = reqlib('services/auth/auth.controller');
+const auth = require(appRoot + '/services/auth/auth.controller');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));

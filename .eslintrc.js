@@ -3,9 +3,7 @@ module.exports = {
     commonjs: true,
     es2021: true,
     node: true,
-  },
-  globals: {
-    reqlib: 'readonly',
+    'jest/globals': true,
   },
   extends: ['airbnb-base', 'prettier'],
   parserOptions: {
@@ -17,5 +15,10 @@ module.exports = {
     'no-underscore-dangle': ['error', { allow: ['_id'] }],
     'import/no-unresolved': [0],
     'no-console': [0],
+    'import/no-dynamic-require': [0],
+    camelcase: [0],
+    'import/newline-after-import': [0],
+    'prefer-template': [0],
   },
+  plugins: ['jest'],
 };

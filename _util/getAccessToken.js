@@ -1,6 +1,6 @@
+const appRoot = require('app-root-path');
 const axios = require('axios');
-
-const { AUTH0 } = reqlib('config');
+const { AUTH0 } = require(appRoot + '/config');
 
 const body = {
   client_id: AUTH0.CLIENT_ID,
@@ -17,7 +17,7 @@ const config = {
 };
 
 function getAccessToken() {
-  return axios(config);
+  return axios(config).then(({ data }) => data);
 }
 
 module.exports = getAccessToken;

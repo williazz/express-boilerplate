@@ -1,7 +1,7 @@
+const appRoot = require('app-root-path');
 const mongoose = require('mongoose');
-
-const config = reqlib('config');
-const User = require('services/users/user.model');
+const config = require(appRoot + '/config');
+const User = require(appRoot + '/services/users/user.model');
 
 const connectionString = process.env.MONGO_URI || config.MONGO_URI;
 const connectionOptions = {

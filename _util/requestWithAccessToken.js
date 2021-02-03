@@ -2,15 +2,17 @@ const axios = require('axios');
 const getAccessToken = require('./getAccessToken');
 
 async function requestWithAccessToken({ url, method, ...options }) {
-  getAccessToken().then(({ data }) => {
-    const authorization = [data.token_type, data.access_token].join(' ');
-    return axios({
-      url,
-      method,
+  const { access_token, token_type } = await getAccessToken();
+  const authorization = [token_type, access_token].join(' ');
+  const config = {
+    headers: {
       authorization,
-      ...options,
-    });
-  });
+    },
+    url,
+    method,
+    ...options,
+  };
+  return axios(config);
 }
 
 module.exports = requestWithAccessToken;

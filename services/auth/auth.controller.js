@@ -1,7 +1,7 @@
+const appRoot = require('app-root-path');
 const express = require('express');
-
-const checkJwt = reqlib('_middleware/checkJwt.js');
-const checkScopes = reqlib('_middleware/checkScopes.js');
+const checkJwt = require(appRoot + '/_middleware/checkJwt.js');
+const checkScopes = require(appRoot + '/_middleware/checkScopes.js');
 
 const router = express.Router();
 
