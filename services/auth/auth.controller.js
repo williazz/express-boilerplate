@@ -1,6 +1,7 @@
 const express = require('express');
-const checkJwt = require('_middleware/checkJwt.js');
-const checkScopes = require('_middleware/checkScopes.js');
+
+const checkJwt = reqlib('_middleware/checkJwt.js');
+const checkScopes = reqlib('_middleware/checkScopes.js');
 
 const router = express.Router();
 

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
+    "test": "jest",
     "format": "prettier --write .",
     "lint": "eslint --cache ."
   },
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-import": "^2.22.1",
     "husky": "^4.3.6",
+    "jest": "^26.6.3",
     "jsdoc": "^3.6.6",
     "lint-staged": "^10.5.3",
     "nodemon": "^2.0.6",
@@ -41,10 +43,10 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
+    "app-root-path": "^3.0.0",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
-    "config": "^3.3.3",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -54,7 +56,6 @@
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^1.12.2",
     "mongoose": "^5.11.8",
-    "request": "^2.88.2",
-    "rootpath": "^0.1.2"
+    "request": "^2.88.2"
   }
 }

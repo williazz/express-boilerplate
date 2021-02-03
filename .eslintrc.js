@@ -4,6 +4,9 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  globals: {
+    reqlib: 'readonly',
+  },
   extends: ['airbnb-base', 'prettier'],
   parserOptions: {
     ecmaVersion: 12,

@@ -1,6 +1,7 @@
 const jwt = require('express-jwt');
 const jwks = require('jwks-rsa');
-const { AUTH0 } = require('config.js');
+
+const { AUTH0 } = reqlib('config');
 
 /**
  * Checks a jwt using a config

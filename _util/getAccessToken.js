@@ -1,5 +1,6 @@
 const axios = require('axios');
-const { AUTH0 } = require('../config.js');
+
+const { AUTH0 } = reqlib('config');
 
 const body = {
   client_id: AUTH0.CLIENT_ID,

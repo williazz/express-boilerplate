@@ -1,8 +1,7 @@
-require('rootpath')();
-const app = require('app');
-const config = require('config.js');
+const app = require('./app');
+const config = require('./config');
 
-const PORT = config.PORT || 3000;
+const PORT = process.env.PORT || config.PORT || 3000;
 app.listen(PORT, (err) => {
   if (err) {
     console.error(err);

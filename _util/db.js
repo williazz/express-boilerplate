@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const config = require('config.js');
+
+const config = reqlib('config');
 const User = require('services/users/user.model');
 
 const connectionString = process.env.MONGO_URI || config.MONGO_URI;
